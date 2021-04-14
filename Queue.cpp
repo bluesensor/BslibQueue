@@ -2,10 +2,10 @@
  * @file Queue.cpp
  * @author Edison
  * @brief Encolador de mensajes para main
- * @version 1.0
- * @date 2021-01-05
+ * @version 1.0.1
+ * @date 2021-04-13
  * 
- * @copyright DataAnalitic S.A. (c) {2020}
+ * @copyright DataAnalitic (c) {2021}
  * 
  */
 
