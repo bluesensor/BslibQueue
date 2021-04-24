@@ -69,17 +69,17 @@ class Message{
 };
 
 /**
- * [Queue description]
+ * [BslibQueue description]
  */
 
-class Queue{
+class BslibQueue{
   private:
 
-    LinkedList<Message> queue ;                                                 //LinkedList of Queue
+    LinkedList<Message> queue ;                                                 //LinkedList of BslibQueue
 
   public:
 
-    Queue() {}                                                                  //Constructor
+    BslibQueue() {}                                                                  //Constructor
 
     void push(Message msg);
     void requeue(Message msg);

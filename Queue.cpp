@@ -112,30 +112,30 @@ String Message::to_string(){
   return "{SUBJ:"+Subject+","+"priority:"+String(priority)+","+"pushed:"+String(pushed)+","+"data:"+data+"}";
 }
 
-//Queue functions
+//BslibQueue functions
 
 /**
- * [Queue::push description]
+ * [BslibQueue::push description]
  * @param msg [description]
  */
-void Queue::push(Message msg){
+void BslibQueue::push(Message msg){
   msg.set_pushed(msg.get_pushed()+1);
   queue.InsertTail(msg);
 }
 
 /**
- * [Queue::requeue description]
+ * [BslibQueue::requeue description]
  * @param msg [description]
  */
-void Queue::requeue(Message msg){
+void BslibQueue::requeue(Message msg){
   queue.InsertHead(msg);
 }
 
 /**
- * [Queue::pop description]
+ * [BslibQueue::pop description]
  * @return [description]
  */
-Message Queue::pop(){
+Message BslibQueue::pop(){
   Message first;
 
   if (queue.GetSize()==1){
@@ -152,33 +152,33 @@ Message Queue::pop(){
 }
 
 /**
- * [Queue::is_empty description]
+ * [BslibQueue::is_empty description]
  * @return [description]
  */
-bool Queue::is_empty(){
+bool BslibQueue::is_empty(){
   return queue.GetSize()==0;
 }
 
 /**
- * [Queue::sort description]
+ * [BslibQueue::sort description]
  */
-void Queue::sort(){
+void BslibQueue::sort(){
   int pass;
 }
 
 /**
- * [Queue::get_size description]
+ * [BslibQueue::get_size description]
  * @return [description]
  */
-int Queue::get_size(){
+int BslibQueue::get_size(){
   return queue.GetSize();
 }
 
 /**
- * [Queue::to_string description]
+ * [BslibQueue::to_string description]
  * @return [description]
  */
-String Queue::to_string(){
+String BslibQueue::to_string(){
 
   String data;
 
