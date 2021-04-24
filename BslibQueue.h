@@ -1,5 +1,5 @@
 /**
- * @file Queue.h
+ * @file BslibQueue.h
  * @author Edison
  * @brief Encolador de mensajes para main
  * @version 1.0.1
@@ -9,9 +9,9 @@
  * 
  */
 
-#ifndef Queue_h
+#ifndef BslibQueue_h
 
-#define Queue_h
+#define BslibQueue_h
 
 #include <LinkedListLib.h>
 #include "RTClib.h"

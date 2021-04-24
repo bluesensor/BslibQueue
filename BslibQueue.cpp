@@ -1,5 +1,5 @@
 /**
- * @file Queue.cpp
+ * @file BslibQueue.cpp
  * @author Edison
  * @brief Encolador de mensajes para main
  * @version 1.0.1
@@ -10,7 +10,7 @@
  */
 
 #include "Arduino.h"
-#include "Queue.h"
+#include "BslibQueue.h"
 
 
 //Message functions
